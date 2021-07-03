@@ -1,1 +1,15 @@
-<footer>FOOTERs</footer>
+<footer>
+
+    <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
+
+    {% if site.data.config.menu %}
+    <nav>
+        <ul>
+            {% for menu in site.data.config.menu %}
+            <li><a title="{{ menu.name }}" href="{{ menu.url }}">{{ menu.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    {% endif %}
+
+</footer>
