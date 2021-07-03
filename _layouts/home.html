@@ -5,29 +5,15 @@ css:
 ---
 
 <ul class="posts">
+    {% for post in site.posts %}
     <li class="post-item">
-        <a class="post-item--link" href="#">
-            <h3 class="post-item--title">Penatibus fusce duis blandit aptent tellus parturient rhoncus tempus</h3>
-            <p class="post-item--description">Inceptos augue quis accumsan donec sociosqu fermentum scelerisque posuere
-                ante.</p>
-            <time class="post-item--time">1 day ago</time>
+        <a class="post-item--link" href="{{ post.url }}">
+            <h3 class="post-item--title">{{ post.title }}</h3>
+            {% if post.description %}
+            <div class="post-item--description">{{ post.description | markdownify }}</div>
+            {% endif %}
+            <time class="post-item--time">{% include days-ago.html %}</time>
         </a>
     </li>
-    <li class="post-item">
-        <a class="post-item--link" href="#">
-            <h3 class="post-item--title">Condimentum vivamus efficitur egestas nunc rutrum ligula</h3>
-            <p class="post-item--description">Senectus convallis finibus adipiscing lacus class eros cras justo
-                ridiculus
-                praesent.</p>
-            <time class="post-item--time">2 months ago</time>
-        </a>
-    </li>
-    <li class="post-item">
-        <a class="post-item--link" href="#">
-            <h3 class="post-item--title">Tortor consectetuer condimentum sem finibus morbi dolor</h3>
-            <p class="post-item--description">Lectus torquent finibus nec mattis fermentum metus mus euismod
-                accumsan.</p>
-            <time class="post-item--time">10 months ago</time>
-        </a>
-    </li>
+    {% endfor %}
 </ul>
