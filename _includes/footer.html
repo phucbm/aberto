@@ -1,15 +1,15 @@
 <footer>
+    <div class="container">
+        <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
 
-    <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
-
-    {% if site.data.config.menu %}
-    <nav>
-        <ul>
-            {% for menu in site.data.config.menu %}
-            <li><a title="{{ menu.name }}" href="{{ menu.url | relative_url }}">{{ menu.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-    {% endif %}
-
+        {% if site.data.config.menu %}
+        <nav>
+            <ul>
+                {% for menu in site.data.config.menu %}
+                <li><a title="{{ menu.name }}" href="{{ menu.url | relative_url }}">{{ menu.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
 </footer>
