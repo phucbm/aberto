@@ -1,0 +1,24 @@
+# store config in _data for livereload
+
+## site info
+author: "Minh-Phuc Bui"
+title: "Site title"
+title-sep: " - "
+description: "A template repository to create simple blog using Jekyll."
+logo: "/assets/images/avatar.png"
+language: "en"
+
+## global assets will be loaded in head
+css:
+  - "/assets/css/variables.css"
+  - "/assets/css/common.css"
+js:
+  - "/assets/js/jquery-3.6.0.min.js"
+  - "/assets/js/main.js"
+
+## menu
+menu:
+  - name: "About"
+    url: "#"
+  - name: "Contact"
+    url: "#"
