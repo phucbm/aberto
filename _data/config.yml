@@ -19,6 +19,6 @@ js:
 ## menu
 menu:
   - name: "About"
-    url: "#"
+    url: "/about"
   - name: "Contact"
-    url: "#"
+    url: "/contact"

@@ -1,0 +1,15 @@
+ul.posts {list-style:none; margin-bottom:var(--space);}
+li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
+.post-item--link {
+    padding:20px; display:block;
+    border-radius:10px;
+    background-color:#fff;
+    border:1px solid #edf2f7;
+}
+.post-item--title {margin-bottom:10px; font-size:18px;}
+.post-item--description {color:var(--dark); margin-bottom:5px;}
+.post-item--time {color:var(--secondary); font-size:14px;}
+.post-item--link:hover, .post-item--link:focus {
+    text-decoration:none;
+    box-shadow:1px 1px 0 1px var(--primary);
+}
