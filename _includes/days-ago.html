@@ -1,0 +1,39 @@
+{% assign publishDate = post.date | date: '%s' %}
+{% assign nowTimestamp = 'now' | date: '%s' %}
+{% assign diffSeconds = nowTimestamp | minus: publishDate %}
+{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %}
+{% assign result = "" %}
+
+{% if diffDays == 0 %}
+{% assign result = "Today" %}
+{% endif %}
+
+{% if diffDays == 1 %}
+{% assign result = "1 day ago" %}
+{% endif %}
+
+{% if diffDays > 1 and diffDays < 30 %}
+{% assign result = diffDays | append: " days ago" %}
+{% endif %}
+
+{% if diffDays >= 30 and diffDays < 60 %}
+{% assign result = "1 month ago" %}
+{% endif %}
+
+{% if diffDays >= 60 and diffDays < 365 %}
+{% assign months = diffDays | divided_by: 30 %}
+{% assign result = months | append: " months ago" %}
+{% endif %}
+
+{% if diffDays >= 365 and diffDays < 730 %}
+{% assign result = "1 year ago" %}
+{% endif %}
+
+{% if diffDays >= 730 %}
+{% assign years = diffDays | divided_by: 365 %}
+{% assign result = years | append: " years ago" %}
+{% endif %}
+
+{% if result %}
+<span class="days-ago" title="{{ publishDate | date: '%b %d, %Y' }}">{{ result }}</span>
+{% endif %}

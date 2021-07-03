@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-description: "**Hello world**, this is my Jekyll blog post."
+title: "Integer potenti semper sagittis magna facilisi turpis class libero sapien."
+description: "Imperdiet etiam sagittis mi tincidunt scelerisque."
 ---
 
 # Welcome
