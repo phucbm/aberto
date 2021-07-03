@@ -18,17 +18,32 @@
     <meta property="og:description" content="{{ page.description | default: site.data.config.description }}">
     <meta property="og:title" content="{{ page.title }}">
 
-    <!-- Common CSS -->
+
     {% if site.data.config.css %}
+    <!-- Common CSS -->
     {% for url in site.data.config.css %}
     <link rel="stylesheet" href="{{ url | relative_url }}">
     {% endfor %}
     {% endif %}
 
-    <!-- Common JS -->
+    {% if layout.css %}
+    <!-- Layout CSS -->
+    {% for url in layout.css %}
+    <link rel="stylesheet" href="{{ url | relative_url }}">
+    {% endfor %}
+    {% endif %}
+
     {% if site.data.config.js %}
+    <!-- Common JS -->
     {% for url in site.data.config.js %}
     <script src="{{ url | relative_url}}"></script>
+    {% endfor %}
+    {% endif %}
+
+    {% if layout.js %}
+    <!-- Layout JS -->
+    {% for url in layout.js %}
+    <link rel="stylesheet" href="{{ url | relative_url }}">
     {% endfor %}
     {% endif %}
 
