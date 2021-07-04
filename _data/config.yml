@@ -26,6 +26,7 @@ menu:
 ## tags
 tag_prepend: "#"
 tag_related_title: "Tags"
+tag_archive_title: "All tags"
 
 ## post
 date_format: "%b %d, %Y"
