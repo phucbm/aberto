@@ -9,7 +9,7 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag.html')
+      self.read_yaml(File.join(base, '_layouts'), 'tags.html')
       self.data['tag'] = tag
       self.data['description'] = tag
       self.data['relatedTags'] = relatedTags
@@ -34,8 +34,8 @@ module Jekyll
     safe true
 
     def generate(site)
-      if site.layouts.key? 'tag'
-        dir = 'tag'
+      if site.layouts.key? 'tags'
+        dir = 'tags'
         site.tags.keys.each do |tag|
           write_tag_index(site, File.join(dir, tag), tag)
         end

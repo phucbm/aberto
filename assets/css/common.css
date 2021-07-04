@@ -44,3 +44,18 @@ footer nav ul li:not(:last-child) {margin-right:20px;}
 .pagination {margin-bottom:var(--space);}
 .pagination span {color:var(--secondary);}
 .pagination-item:not(:last-child) {margin-right:20px;}
+
+/* tags */
+a.tag-item {background:#f1f1f1; padding:.2em .5em; border-radius:.3em;}
+a.tag-item:not(:last-child) {margin-right:.3em;}
+a.tag-item:hover, a.tag-item:focus {
+    background-color:var(--primary); color:#fff; text-decoration:none;
+}
+.related-tags a.tag-item {
+    background-color:#fff;
+    border:1px solid #edf2f7;
+    font-size:20px;
+}
+.related-tags a.tag-item:hover, .related-tags a.tag-item:focus {
+    background-color:var(--primary); color:#fff; text-decoration:none;
+}

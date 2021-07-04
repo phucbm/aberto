@@ -2,6 +2,9 @@ permalink: /:title
 paginate: 5
 paginate_path: "/posts/page-:num/"
 
+# Tags
+tag_path: "/tags/"
+
 # Exclude these files from production site
 exclude:
   - Gemfile

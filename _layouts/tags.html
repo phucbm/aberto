@@ -15,9 +15,10 @@ css:
     {% endfor %}
 </ul>
 
+
+<h2 class="margin-bottom-small">{{ site.data.config.tag-related }}</h2>
 <div class="related-tags margin-bottom">
-    <h2>Related tags</h2>
     {% for relatedTags in page.relatedTags %}
-    <a href="/tag/{{ relatedTags }}">{{ relatedTags }}</a>
+    <a href="{{ site.tag_path }}{{ relatedTags }}" class="tag-item">#{{ relatedTags }}</a>
     {% endfor %}
 </div>
