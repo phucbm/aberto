@@ -1,4 +1,4 @@
-{% assign publishDate = post.date | date: '%s' %}
+{% assign publishDate = post.date | default: page.date | date: '%s' %}
 {% assign nowTimestamp = 'now' | date: '%s' %}
 {% assign diffSeconds = nowTimestamp | minus: publishDate %}
 {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %}
@@ -35,5 +35,5 @@
 {% endif %}
 
 {% if result %}
-<span class="days-ago" title="{{ publishDate | date: site.data.config.date_format }}">{{ result }}</span>
+<span class="days-ago" title="{{ publishDate | date: site.data.config.date_pretty_format }}">{{ result }}</span>
 {% endif %}

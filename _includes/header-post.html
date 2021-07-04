@@ -1,0 +1,29 @@
+<header>
+    <div class="container">
+
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        <div class="post-metadata">
+
+            <div class="post-metadata-left">
+
+                {% include logo.html %}
+                <div class="post-metadata-info">
+                    <time class="post-date txt_secondary" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                        {{ page.date | date: site.data.config.date_pretty_format }}
+                    </time>
+                    <div class="post-tags">
+                        {% for tag in page.tags %}
+                        <a href="{{ site.tag_path }}{{ tag }}" class="tag-item">{{ site.data.config.tag_prepend }}{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-metadata-right">SHARE</div>
+
+        </div>
+
+    </div>
+</header>
