@@ -2,6 +2,8 @@
 layout: post
 title: "Libero et duis dolor turpis consequat"
 description: "Class adipiscing curabitur purus aliquet."
+tags:
+- random
 ---
 
 # Welcome
