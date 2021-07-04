@@ -1,0 +1,14 @@
+/* title */
+.post-title {
+    border-bottom:1px solid #e2e8f0;
+    padding-bottom:var(--space-small); margin-bottom:var(--space-small);
+}
+
+/* metadata */
+.post-metadata {
+    display:flex; justify-content:space-between; align-items:center;
+}
+.post-metadata-left {display:flex; align-items:center;}
+.post-metadata-info {padding-left:10px;}
+.post-metadata .logo {width:60px; margin-bottom:0;}
+.post-tags {padding-top:10px;}

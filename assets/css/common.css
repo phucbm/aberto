@@ -8,6 +8,8 @@
 .margin-bottom {margin-bottom:var(--space);}
 .margin-bottom-small {margin-bottom:var(--space-small);}
 .padding-bottom {padding-bottom:var(--space);}
+.txt_center {display:block; text-align:center;}
+.txt_secondary {color:var(--secondary);}
 
 /* common */
 body {
@@ -24,8 +26,7 @@ a:hover, a:focus {text-decoration:underline;}
 p:not(:last-child) {margin-bottom:var(--space-small);}
 
 /* header */
-header {text-align:center; padding:var(--space) 0;}
-header h1 {font-size:20px;}
+header {padding:var(--space) 0;}
 
 /* logo */
 .logo {width:100px; display:inline-block; margin-bottom:var(--space-small)}

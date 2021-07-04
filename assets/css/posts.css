@@ -17,6 +17,3 @@ li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
 /* metadata */
 .post-item--metadata {display:flex; font-size:14px; padding-top:5px;}
 .post-item--metadata > div:not(:first-child) {margin-left:15px;}
-
-/* metadata > time */
-.post-item--time {color:var(--secondary);}

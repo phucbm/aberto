@@ -10,7 +10,7 @@
 
         <div class="post-item--metadata">
 
-            <time class="post-item--time">{% include days-ago.html %}</time>
+            <time class="post-item--time txt_secondary" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include days-ago.html %}</time>
 
             <div class="post-item--tags">
                 {% for tag in post.tags %}
