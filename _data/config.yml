@@ -22,3 +22,6 @@ menu:
     url: "/about"
   - name: "Contact"
     url: "/contact"
+
+## tags
+tag-title: "#"
