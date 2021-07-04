@@ -2,7 +2,7 @@
     <div class="post-item--inner">
 
 
-        <h3 class="post-item--title"><a class="post-item--link" href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 class="post-item--title"><a class="post-item--link" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
 
         {% if post.description %}
         <div class="post-item--description">{{ post.description | markdownify }}</div>
