@@ -18,7 +18,7 @@ css:
 
 <h2 class="margin-bottom-small">{{ site.data.config.tag_related_title }}</h2>
 <div class="tags-list margin-bottom">
-    {% for relatedTags in page.relatedTags %}
-    <a href="{{ site.tag_path }}{{ relatedTags }}" class="tag-item">{{ site.data.config.tag_prepend }}{{ relatedTags }}</a>
+    {% for tag in page.relatedTags %}
+    {% include tag-item.html tag=tag %}
     {% endfor %}
 </div>

@@ -14,7 +14,7 @@
                     </time>
                     <div class="post-tags">
                         {% for tag in page.tags %}
-                        <a href="{{ site.tag_path }}{{ tag }}" class="tag-item">{{ site.data.config.tag_prepend }}{{ tag }}</a>
+                        {% include tag-item.html tag=tag %}
                         {% endfor %}
                     </div>
                 </div>
