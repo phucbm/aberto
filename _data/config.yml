@@ -3,7 +3,7 @@
 ## site info
 author: "Minh-Phuc Bui"
 title: "Site title"
-title-sep: " - "
+title_sep: " - "
 description: "A template repository to create simple blog using Jekyll."
 logo: "/assets/images/avatar.png"
 language: "en"
@@ -24,5 +24,15 @@ menu:
     url: "/contact"
 
 ## tags
-tag-title: "#"
-tag-related: "Tags"
+tag_prepend: "#"
+tag_related_title: "Tags"
+
+## post
+date_format: "%b %d, %Y"
+date_today: "Today"
+date_singular_day_ago: "1 day ago"
+date_plural_days_ago: "[n] days ago"
+date_singular_month_ago: "1 month ago"
+date_plural_months_ago: "[n] months ago"
+date_singular_year_ago: "1 year ago"
+date_plural_years_ago: "[n] years ago"

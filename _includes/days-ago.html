@@ -5,35 +5,35 @@
 {% assign result = "" %}
 
 {% if diffDays == 0 %}
-{% assign result = "Today" %}
+{% assign result = site.data.config.date_today %}
 {% endif %}
 
 {% if diffDays == 1 %}
-{% assign result = "1 day ago" %}
+{% assign result = site.data.config.date_singular_day_ago %}
 {% endif %}
 
 {% if diffDays > 1 and diffDays < 30 %}
-{% assign result = diffDays | append: " days ago" %}
+{% assign result = site.data.config.date_plural_days_ago | replace: "[n]", diffDays %}
 {% endif %}
 
 {% if diffDays >= 30 and diffDays < 60 %}
-{% assign result = "1 month ago" %}
+{% assign result = site.data.config.date_singular_month_ago %}
 {% endif %}
 
 {% if diffDays >= 60 and diffDays < 365 %}
 {% assign months = diffDays | divided_by: 30 %}
-{% assign result = months | append: " months ago" %}
+{% assign result = site.data.config.date_plural_months_ago | replace: "[n]", months %}
 {% endif %}
 
 {% if diffDays >= 365 and diffDays < 730 %}
-{% assign result = "1 year ago" %}
+{% assign result = site.data.config.date_singular_year_ago %}
 {% endif %}
 
 {% if diffDays >= 730 %}
 {% assign years = diffDays | divided_by: 365 %}
-{% assign result = years | append: " years ago" %}
+{% assign result = site.data.config.date_plural_years_ago | replace: "[n]", years %}
 {% endif %}
 
 {% if result %}
-<span class="days-ago" title="{{ publishDate | date: '%b %d, %Y' }}">{{ result }}</span>
+<span class="days-ago" title="{{ publishDate | date: site.data.config.date_format }}">{{ result }}</span>
 {% endif %}
