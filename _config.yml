@@ -1,6 +1,6 @@
 permalink: /:title
 paginate: 5
-paginate_path: "/posts/page=:num/"
+paginate_path: "/posts/page-:num/"
 
 # Exclude these files from production site
 exclude:
