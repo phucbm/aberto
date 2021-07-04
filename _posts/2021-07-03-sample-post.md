@@ -2,7 +2,9 @@
 layout: post
 title: "Welcome to Jekyll!"
 description: "**Hello world**, this is my Jekyll blog post."
-tags: lorem-ipsum random
+tags: 
+    - lorem-ipsum 
+    - random
 ---
 
 # Welcome

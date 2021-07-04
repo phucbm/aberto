@@ -1,0 +1,22 @@
+<li class="post-item">
+    <div class="post-item--inner">
+
+        <a class="post-item--link" href="{{ post.url }}">
+            <h3 class="post-item--title">{{ post.title }}</h3>
+            {% if post.description %}
+            <div class="post-item--description">{{ post.description | markdownify }}</div>
+            {% endif %}
+        </a>
+
+        <div class="post-item--info">
+            <time class="post-item--time">{% include days-ago.html %}</time>
+
+            <div class="post-item--tags">
+                {% for tag in post.tags %}
+                <a href="/tag/{{ tag }}">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</li>
