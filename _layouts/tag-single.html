@@ -4,16 +4,15 @@ css:
 - "/assets/css/posts.css"
 ---
 
+{% comment %} Get the current tag from page name {% endcomment %}
 {% assign pageTag = page.name | replace: ".md", "" %}
 
-<h1 class="margin-bottom-small">{{ site.data.config.tag_prepend }}{{ pageTag }}({{ site.tags[pageTag].size }})</h1>
+<h1 class="margin-bottom-small">{{ site.data.config.tag_prepend }}{{ pageTag }} ({{ site.tags[pageTag].size }})</h1>
 
 <ul class="posts margin-bottom">
-
 {% for post in site.tags[pageTag] %}
 {% include post-item.html %}
 {% endfor %}
-
 </ul>
 
 <h2 class="margin-bottom-small">{{ site.data.config.tag_related_title }}</h2>
