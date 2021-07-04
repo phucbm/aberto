@@ -33,6 +33,13 @@
     {% endfor %}
     {% endif %}
 
+    {% if page.css %}
+    <!-- Page CSS -->
+    {% for url in page.css %}
+    <link rel="stylesheet" href="{{ url | relative_url }}">
+    {% endfor %}
+    {% endif %}
+
     {% if site.data.config.js %}
     <!-- Common JS -->
     {% for url in site.data.config.js %}
@@ -43,6 +50,13 @@
     {% if layout.js %}
     <!-- Layout JS -->
     {% for url in layout.js %}
+    <link rel="stylesheet" href="{{ url | relative_url }}">
+    {% endfor %}
+    {% endif %}
+
+    {% if page.js %}
+    <!-- Page JS -->
+    {% for url in page.js %}
     <link rel="stylesheet" href="{{ url | relative_url }}">
     {% endfor %}
     {% endif %}
