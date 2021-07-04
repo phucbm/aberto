@@ -1,5 +1,4 @@
 ul.posts {list-style:none; margin-bottom:var(--space);}
-
 li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
 
 .post-item--inner {
@@ -9,20 +8,22 @@ li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
     border:1px solid #edf2f7;
 }
 
-/* link */
-.post-item--link {display:block;}
+/* title */
 .post-item--title {margin-bottom:10px; font-size:18px;}
-.post-item--description {color:var(--dark); margin-bottom:5px;}
-.post-item--link:hover {text-decoration:none;}
-.post-item--link:hover .post-item--title {text-decoration:underline;}
-.post-item--link:hover .post-item--description {text-decoration:none;}
 
-/* info */
-.post-item--info {display:flex; font-size:14px;}
+/* description */
+.post-item--description {color:var(--dark); margin-bottom:5px;}
+
+/* metadata */
+.post-item--metadata {display:flex; font-size:14px; padding-top:5px;}
+.post-item--metadata > div:not(:first-child) {margin-left:15px;}
+
+/* metadata > time */
 .post-item--time {color:var(--secondary);}
-.post-item--tags {margin-left:20px;}
+
+/* metadata > tags */
 .post-item--tags a {background:#f1f1f1; padding:2px 5px; border-radius:4px;}
-.post-item--tags a:not(:last-child) {margin-right:5px;}
+.post-item--tags a:not(:last-child) {margin-right:3px;}
 .post-item--tags a:hover, .post-item--tags a:focus {
     background-color:var(--primary); color:#fff; text-decoration:none;
 }

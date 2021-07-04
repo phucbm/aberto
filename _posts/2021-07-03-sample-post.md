@@ -5,6 +5,7 @@ description: "**Hello world**, this is my Jekyll blog post."
 tags: 
     - lorem-ipsum 
     - random
+    - dolor
 ---
 
 # Welcome

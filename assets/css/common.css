@@ -1,7 +1,15 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/* reset */
 * {padding:0; margin:0; outline:none; border:none;}
 
+/* pre-defined classes */
+.margin-bottom {margin-bottom:var(--space);}
+.margin-bottom-small {margin-bottom:var(--space-small);}
+.padding-bottom {padding-bottom:var(--space);}
+
+/* common */
 body {
     font-family:"Roboto", sans-serif;
     background-color:#f7fafc; color:#1d1d1d;
@@ -22,13 +30,9 @@ header figure a {display:block;}
 header figure a img {width:100%; height:auto;}
 header h1 {font-size:20px;}
 
-/* main */
-main {margin-bottom:var(--space);}
-
 /* footer */
 footer .container {
     display:flex; justify-content:space-between;
-    padding-bottom:var(--space);
 }
 footer nav ul {
     list-style:none; margin:0;

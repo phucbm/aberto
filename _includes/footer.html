@@ -1,15 +1,19 @@
-<footer>
+<footer class="padding-bottom">
     <div class="container">
-        <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
+        <div class="left">
+            <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
+        </div>
 
         {% if site.data.config.menu %}
-        <nav>
-            <ul>
-                {% for menu in site.data.config.menu %}
-                <li><a title="{{ menu.name }}" href="{{ menu.url | relative_url }}">{{ menu.name }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
+        <div class="right">
+            <nav>
+                <ul>
+                    {% for menu in site.data.config.menu %}
+                    <li><a title="{{ menu.name }}" href="{{ menu.url | relative_url }}">{{ menu.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
         {% endif %}
     </div>
 </footer>
