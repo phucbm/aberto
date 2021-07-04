@@ -4,7 +4,7 @@ css:
 - "/assets/css/posts.css"
 ---
 
-<h1 class="margin-bottom-small">{{ site.data.config.tag-title }}{{ page.tag }}</h1>
+<h1 class="margin-bottom-small">{{ site.data.config.tag_prepend }}{{ page.tag }}</h1>
 <ul class="posts margin-bottom">
     {% for post in site.posts %}
     {% for tag in post.tags %}
@@ -16,9 +16,9 @@ css:
 </ul>
 
 
-<h2 class="margin-bottom-small">{{ site.data.config.tag-related }}</h2>
+<h2 class="margin-bottom-small">{{ site.data.config.tag_related_title }}</h2>
 <div class="related-tags margin-bottom">
     {% for relatedTags in page.relatedTags %}
-    <a href="{{ site.tag_path }}{{ relatedTags }}" class="tag-item">#{{ relatedTags }}</a>
+    <a href="{{ site.tag_path }}{{ relatedTags }}" class="tag-item">{{ site.data.config.tag_prepend }}{{ relatedTags }}</a>
     {% endfor %}
 </div>
