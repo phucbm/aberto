@@ -53,11 +53,11 @@ a.tag-item:not(:last-child) {margin-right:.3em;}
 a.tag-item:hover, a.tag-item:focus {
     background-color:var(--primary); color:#fff; text-decoration:none;
 }
-.related-tags a.tag-item {
+.tags-list a.tag-item {
     background-color:#fff;
     border:1px solid #edf2f7;
     font-size:20px;
 }
-.related-tags a.tag-item:hover, .related-tags a.tag-item:focus {
+.tags-list a.tag-item:hover, .tags-list a.tag-item:focus {
     background-color:var(--primary); color:#fff; text-decoration:none;
 }
