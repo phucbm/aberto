@@ -25,10 +25,12 @@ p:not(:last-child) {margin-bottom:var(--space-small);}
 
 /* header */
 header {text-align:center; padding:var(--space) 0;}
-header figure {width:100px; display:inline-block; margin-bottom:var(--space-small)}
-header figure a {display:block;}
-header figure a img {width:100%; height:auto;}
 header h1 {font-size:20px;}
+
+/* logo */
+.logo {width:100px; display:inline-block; margin-bottom:var(--space-small)}
+.logo a {display:block;}
+.logo a img {width:100%; height:auto;}
 
 /* footer */
 footer .container {
