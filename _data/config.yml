@@ -4,7 +4,7 @@
 author: "Minh-Phuc Bui"
 title: "Another Jekyll site"
 title_sep: " - "
-description: "A template repository to create simple blog using Jekyll."
+description: "A basic blog engine using Jekyll and Github Pages."
 logo: "/assets/images/avatar.png"
 language: "en"
 
