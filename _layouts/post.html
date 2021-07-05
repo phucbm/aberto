@@ -2,9 +2,52 @@
 layout: base
 header: "header-post.html"
 css:
+- "/assets/css/posts.css"
 - "/assets/css/post-detail.css"
 ---
 
 <div class="post-content margin-bottom">
     {{ content }}
 </div>
+
+
+<h2 class="margin-bottom-small">{{ site.data.config.post_related_title }}</h2>
+<ul class="posts related margin-bottom">
+
+    {% assign related_posts = "" %}
+    {% assign post_count = 0 %}
+
+    {% comment %} Filter by tags if post has tags {% endcomment %}
+    {% if page.tags.size > 0 %}
+
+    {% for tag in page.tags %}
+    {% for post in site.tags[tag] %}
+
+    {% comment %} Check to skip duplicated post {% endcomment %}
+    {% assign check_array = related_posts | split:',' | sort %}
+    {% unless check_array contains post.id %}
+
+    {% include post-item.html %}
+
+    {% assign related_posts = related_posts | append:post.id %}
+    {% assign related_posts = related_posts | append:"," %}
+    {% assign post_count = post_count | plus:1 %}
+    {% if post_count >= site.data.config.post_related_count %}{% break %}{% endif %}
+
+    {% endunless %}
+
+    {% endfor %}
+    {% endfor %}
+
+    {% else %}
+
+    {% comment %} Show the most recent posts {% endcomment %}
+    {% for post in site.related_posts %}
+    {% include post-item.html %}
+    {% assign post_count = post_count | plus:1 %}
+    {% if post_count >= site.data.config.post_related_count %}{% break %}{% endif %}
+    {% endfor %}
+
+    {% endif %}
+
+</ul>
