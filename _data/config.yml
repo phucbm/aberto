@@ -38,3 +38,7 @@ date_singular_month_ago: "1 month ago"
 date_plural_months_ago: "[n] months ago"
 date_singular_year_ago: "1 year ago"
 date_plural_years_ago: "[n] years ago"
+
+## post
+post_related_count: 3
+post_related_title: "Related posts"
