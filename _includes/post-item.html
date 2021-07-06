@@ -12,6 +12,10 @@
 
             <time class="post-item--time txt_secondary" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include days-ago.html %}</time>
 
+            <i class="circle-separator"></i>
+
+            {% include read-time.html %}
+
             <div class="post-item--tags">
                 {% for tag in post.tags %}
                 {% include tag-item.html tag=tag %}

@@ -15,5 +15,5 @@ li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
 .post-item--description {color:var(--dark); margin-bottom:5px;}
 
 /* metadata */
-.post-item--metadata {display:flex; font-size:14px; padding-top:5px;}
+.post-item--metadata {display:flex; align-items:center; font-size:14px; padding-top:5px;}
 .post-item--metadata > div:not(:first-child) {margin-left:15px;}

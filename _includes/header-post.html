@@ -9,9 +9,13 @@
 
                 {% include logo.html %}
                 <div class="post-metadata-info">
-                    <time class="post-date txt_secondary" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-                        {{ page.date | date: site.data.config.date_pretty_format }}
-                    </time>
+                    <div class="post-meta-extra">
+                        <time class="post-date txt_secondary" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                            {{ page.date | date: site.data.config.date_pretty_format }}
+                        </time>
+                        <i class="circle-separator"></i>
+                        {% include read-time.html %}
+                    </div>
                     <div class="post-tags">
                         {% for tag in page.tags %}
                         {% include tag-item.html tag=tag %}
