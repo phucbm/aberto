@@ -1,0 +1,31 @@
+{% assign post_count = 0 %}
+{% assign post_max = include.post_max | default:site.data.config.post_related_count %}
+{% assign saved_posts = "" %}
+
+
+{% if page.tags.size > 0 %}
+<ul class="posts filter-by-tags margin-bottom">
+    
+    {% for tag in page.tags %}
+    {% for post in site.tags[tag] %}
+
+    {% comment %} Check to skip duplicated post {% endcomment %}
+    {% assign check_array = saved_posts | split:',' | sort %}
+
+    {% unless check_array contains post.id %}
+
+    {% include post-item.html %}
+
+    {% assign saved_posts = saved_posts | append:post.id %}
+    {% assign saved_posts = saved_posts | append:"," %}
+
+    {% assign post_count = post_count | plus:1 %}
+    {% if post_count >= post_max %}{% break %}{% endif %}
+
+    {% endunless %}
+
+    {% endfor %}
+    {% endfor %}
+    
+</ul>
+{% endif %}
