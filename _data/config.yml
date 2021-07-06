@@ -40,5 +40,7 @@ date_singular_year_ago: "1 year ago"
 date_plural_years_ago: "[n] years ago"
 
 ## post
-post_related_count: 3
+post_related_max: 3
 post_related_title: "Related posts"
+post_recent_title: "Recent posts"
+post_manual_select_title: "You might also want to read"

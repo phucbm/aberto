@@ -10,15 +10,16 @@ css:
     {{ content }}
 </div>
 
-<h2 class="post-related-title margin-bottom-small">{{ site.data.config.post_related_title }}</h2>
-
 {% if page.related.size > 0 %}
+<h2 class="post-related-title margin-bottom-small">{{ site.data.config.post_manual_select_title }}</h2>
 {% include post-list-manual-select.html %}
 
 {% elsif page.tags.size > 0 %}
+<h2 class="post-related-title margin-bottom-small">{{ site.data.config.post_related_title }}</h2>
 {% include post-list-filter-by-tags.html %}
 
 {% else %}
+<h2 class="post-related-title margin-bottom-small">{{ site.data.config.post_recent_title }}</h2>
 {% include post-list-recent.html %}
 
 {% endif %}
