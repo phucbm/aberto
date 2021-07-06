@@ -1,5 +1,5 @@
 {% assign post_count = 0 %}
-{% assign post_max = include.post_max | default:site.data.config.post_related_count %}
+{% assign post_max = include.post_max | default:site.data.config.post_related_max %}
 
 <ul class="posts recent margin-bottom">
     {% for post in site.related_posts %}
