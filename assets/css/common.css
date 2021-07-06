@@ -62,3 +62,9 @@ a.tag-item:hover, a.tag-item:focus {
 .tags-list a.tag-item:hover, .tags-list a.tag-item:focus {
     background-color:var(--primary); color:#fff; text-decoration:none;
 }
+
+/* circle separator */
+.circle-separator {
+    display:inline-block; width:3px; height:3px; margin:0 10px;
+    border-radius:50%; background-color:var(--secondary); opacity:.5;
+}

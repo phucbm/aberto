@@ -44,3 +44,7 @@ post_related_max: 3
 post_related_title: "Related posts"
 post_recent_title: "Recent posts"
 post_manual_select_title: "You might also want to read"
+
+## read time
+min_read: "min read"
+words_per_min: 180

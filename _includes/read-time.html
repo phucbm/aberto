@@ -1,0 +1,6 @@
+<span class="reading-time txt_secondary">
+    {% assign words_per_min = site.data.config.words_per_min | default: 180 %}
+    {% assign words = include.content | default: post.content | default: page.content | strip_html | number_of_words %}
+    {% assign min = words | divided_by: words_per_min | plus: 1 %}
+    {{ min }} {{ site.data.config.min_read }}
+</span>
