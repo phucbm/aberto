@@ -1,0 +1,13 @@
+{% assign post_count = 0 %}
+{% assign post_max = include.post_max | default:site.data.config.post_related_count %}
+
+<ul class="posts recent margin-bottom">
+    {% for post in site.related_posts %}
+
+    {% include post-item.html %}
+    {% assign post_count = post_count | plus:1 %}
+
+    {% if post_count >= post_max %}{% break %}{% endif %}
+
+    {% endfor %}
+</ul>

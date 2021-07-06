@@ -1,0 +1,14 @@
+{% if page.related.size > 0 %}
+<ul class="posts manual-select margin-bottom">
+    {% for post_id in page.related %}
+    {% for post in site.posts %}
+
+    {% if post_id == post.id %}
+    {% include post-item.html %}
+    {% break %}
+    {% endif %}
+
+    {% endfor %}
+    {% endfor %}
+</ul>
+{% endif %}

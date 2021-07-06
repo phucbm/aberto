@@ -6,6 +6,9 @@ tags:
     - lorem-ipsum 
     - random
     - dolor
+related:
+- "/libero-et-duis-dolor-turpis-consequat"
+- "/welcome-to-jekyll"
 ---
 
 # Welcome
