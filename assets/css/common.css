@@ -11,20 +11,6 @@
 .txt_center {display:block; text-align:center;}
 .txt_secondary {color:var(--secondary);}
 
-/* common */
-body {
-    font-family:"Roboto", sans-serif;
-    background-color:#f7fafc; color:#1d1d1d;
-    min-height:100vh;
-    display:flex; flex-direction:column; justify-content:space-between;
-}
-.container {
-    width:100%; max-width:768px; margin:0 auto;
-}
-a {color:var(--primary); text-decoration:none; transition:all .3s ease;}
-a:hover, a:focus {text-decoration:underline;}
-p:not(:last-child) {margin-bottom:var(--space-small);}
-
 /* header */
 header {padding:var(--space) 0;}
 
