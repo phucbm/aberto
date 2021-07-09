@@ -1,0 +1,22 @@
+/* common */
+body {
+    font-family:"Roboto", sans-serif;
+    background-color:#f7fafc; color:#1d1d1d;
+    min-height:100vh; line-height:1.5;
+    display:flex; flex-direction:column; justify-content:space-between;
+}
+
+/* container */
+.container {width:100%; max-width:680px; margin:0 auto;}
+
+/* permalink */
+a {color:var(--primary); text-decoration:none; transition:all .3s ease;}
+a:hover, a:focus {text-decoration:underline;}
+
+/* paragraph */
+p:not(:last-child) {margin-bottom:var(--space-small);}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom:var(--space-small);
+}

@@ -11,6 +11,7 @@ language: "en"
 ## global assets will be loaded in head
 css:
   - "/assets/css/variables.css"
+  - "/assets/css/markdown.css"
   - "/assets/css/common.css"
 js:
   - "/assets/js/jquery-3.6.0.min.js"
