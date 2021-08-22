@@ -1,4 +1,6 @@
-/* font */
+/**
+ * Load fonts
+ */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 /**
@@ -6,16 +8,58 @@
  - font-family: 'Source Code Pro', monospace; 400
  */
 
+
+/**
+ * Basic style
+ */
 /* reset */
 * {padding:0; margin:0; outline:none; border:none;}
 
-/* pre-defined classes */
+/* common */
+:root {font-size:16px;}
+body {
+    font-family:"IBM Plex Sans", sans-serif; font-weight:400; font-size:1rem;
+    background-color:#fcfdfb; color:#254440;
+    min-height:100vh; line-height:1.7;
+    display:flex; flex-direction:column; justify-content:space-between;
+}
+
+/* container */
+.container {width:100%; max-width:680px; margin:0 auto;}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+    font-family:"IBM Plex Sans", sans-serif; font-weight:600; line-height:1.3;
+    margin-bottom:var(--space-small);
+}
+h1 {font-size:2.2rem;}
+h2 {font-size:2rem;}
+h3 {font-size:1.8rem;}
+h4 {font-size:1.6rem;}
+h5 {font-size:1.4rem;}
+h6 {font-size:1.2rem;}
+
+/* permalink */
+a {color:var(--primary); text-decoration:none; transition:all .3s ease;}
+a:hover, a:focus {text-decoration:underline;}
+
+/* paragraph */
+p {margin-bottom:var(--space-small);}
+
+
+/**
+ * Pre-defined classes
+ */
 .margin-bottom {margin-bottom:var(--space);}
 .margin-bottom-small {margin-bottom:var(--space-small);}
 .padding-bottom {padding-bottom:var(--space);}
 .txt_center {display:block; text-align:center;}
 .txt_secondary {color:var(--secondary);}
 
+
+/**
+ * System UI
+ */
 /* header */
 header {padding:var(--space) 0;}
 
