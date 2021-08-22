@@ -50,11 +50,25 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## Lists
 
+```markdown
 1. First ordered list item
 2. Another item
    * Unordered sub-list.
    * Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
+3. Actual numbers don't matter, just that it's a number
+   1. Ordered sub-list
+   2. Another ordered sub-list item
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+```
+
+1. First ordered list item
+2. Another item
+   * Unordered sub-list.
+   * Unordered sub-list.
+3. Actual numbers don't matter, just that it's a number
    1. Ordered sub-list
    2. Another ordered sub-list item
 
@@ -119,6 +133,14 @@ alert(s);
 
 Colons can be used to align columns.
 
+```markdown
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
@@ -129,6 +151,13 @@ There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the
 raw Markdown line up prettily. You can also use inline Markdown.
 
+```markdown
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+```
+
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
@@ -138,9 +167,18 @@ Markdown | Less | Pretty
 
 ## Blockquotes
 
+```markdown
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+```
+
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
 
 Quote break.
+
+```markdown
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+```
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
