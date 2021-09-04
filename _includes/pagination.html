@@ -1,15 +1,15 @@
 {% if paginator.total_pages > 1 %}
-<div class="pagination margin-bottom">
+<div class="a-pagination margin-bottom">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path | absolute_url }}" class="previous pagination-item">Previous</a>
+  <a href="{{ paginator.previous_page_path | absolute_url }}" class="previous a-pagination-item">Previous</a>
   {% else %}
-  <span class="previous pagination-item">Previous</span>
+  <span class="previous a-pagination-item">Previous</span>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path | absolute_url }}" class="next pagination-item">Next</a>
+  <a href="{{ paginator.next_page_path | absolute_url }}" class="next a-pagination-item">Next</a>
   {% else %}
-  <span class="next pagination-item">Next</span>
+  <span class="next a-pagination-item">Next</span>
   {% endif %}
 </div>
 {% endif %}

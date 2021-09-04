@@ -10,7 +10,7 @@ layout: base
 {% assign tags_list = site_tags | split:',' | sort %}
 
 <h1 class="margin-bottom-small">{{ site.data.config.tag_archive_title }}</h1>
-<div class="tags-list margin-bottom">
+<div class="tags-list a-flex-center margin-bottom">
     {% for tag in tags_list %}
     {% include tag-item.html tag=tag %}
     {% endfor %}

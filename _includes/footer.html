@@ -1,5 +1,5 @@
-<footer class="padding-bottom">
-    <div class="container">
+<footer class="a-footer padding-bottom">
+    <div class="a-footer-inner container a-flex-space-between">
         <div class="left">
             <p>© {{ 'now' | date: "%Y" }} {{ site.data.config.author }}</p>
         </div>
@@ -7,7 +7,7 @@
         {% if site.data.config.menu %}
         <div class="right">
             <nav>
-                <ul>
+                <ul class="a-flex-center-both">
                     {% for menu in site.data.config.menu %}
                     <li><a title="{{ menu.name }}" href="{{ menu.url | relative_url }}">{{ menu.name }}</a></li>
                     {% endfor %}

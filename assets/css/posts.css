@@ -1,19 +1,28 @@
 ul.posts {list-style:none;}
-li.post-item:not(:last-child) {margin-bottom:var(--space-small);}
+li.post-item:not(:last-child) {margin-bottom:var(--a-space-small);}
 
 .post-item--inner {
-    padding:20px;
+    padding:var(--a-padding);
     border-radius:10px;
     background-color:#fff;
-    border:1px solid #edf2f7;
+    border:1px solid var(--a-border);
 }
 
 /* title */
-.post-item--title {margin-bottom:10px; font-size:18px;}
+.post-item--title {margin-bottom:10px; font-size:var(--a-font-body);}
 
 /* description */
-.post-item--description {color:var(--dark); margin-bottom:5px;}
+.post-item--description {color:var(--a-dark); margin-bottom:5px;}
 
 /* metadata */
-.post-item--metadata {display:flex; align-items:center; font-size:14px; padding-top:5px;}
-.post-item--metadata > div:not(:first-child) {margin-left:15px;}
+.post-item--bottom {font-size:var(--a-font-small); padding-top:5px;}
+.post-item--metadata {padding-right:15px;}
+
+/* responsive */
+@media only screen and (max-width:768px) {
+    .post-item--inner {border-radius:6px;}
+
+    .post-item--bottom {display:block;}
+    .post-item--metadata {padding-right:0;}
+    .post-item--tags {padding-top:5px;}
+}
