@@ -3,13 +3,13 @@
 
         <h1 class="post-title">{{ page.title }}</h1>
 
-        <div class="post-metadata">
+        <div class="post-metadata a-flex-center">
 
-            <div class="post-metadata-left">
+            <div class="post-metadata-left a-flex-center">
 
                 {% include logo.html %}
                 <div class="post-metadata-info">
-                    <div class="post-meta-extra">
+                    <div class="post-meta-extra a-flex-center">
                         <time class="post-date txt_secondary" datetime="{{ page.date | date: '%Y-%m-%d' }}">
                             {{ page.date | date: site.data.config.date_pretty_format }}
                         </time>
@@ -17,9 +17,11 @@
                         {% include read-time.html %}
                     </div>
                     <div class="post-tags">
-                        {% for tag in page.tags %}
-                        {% include tag-item.html tag=tag %}
-                        {% endfor %}
+                        <div class="tags-list--small a-flex-center">
+                            {% for tag in page.tags %}
+                            {% include tag-item.html tag=tag %}
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
 

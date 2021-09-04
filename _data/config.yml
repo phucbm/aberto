@@ -2,10 +2,10 @@
 
 ## site info
 author: "Minh-Phuc Bui"
-title: "Complete blog engine powered by Jekyll."
+title: "Aberto"
 title_sep: " - "
-description: "Complete blog engine powered by Jekyll."
-logo: "/assets/images/avatar.png"
+description: "Aberto - Blog engine powered by Jekyll"
+logo: "/assets/images/logo.svg"
 language: "en"
 
 ## global assets will be loaded in head
@@ -18,10 +18,10 @@ js:
 
 ## menu
 menu:
+  - name: "Home"
+    url: "/"
   - name: "About"
     url: "/about"
-  - name: "Contact"
-    url: "/contact"
   - name: "Typography"
     url: "/typography"
 

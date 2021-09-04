@@ -1,3 +1,5 @@
-<a href="{{ site.data.config.tag_path | append: include.tag | absolute_url | url_decode }}" class="tag-item">
-  {{ site.data.config.tag_prepend }}{{ include.tag }}
-</a>
+<div class="tag-item">
+    <a href="{{ site.data.config.tag_path | append: include.tag | absolute_url | url_decode }}">
+        {{ site.data.config.tag_prepend }}{{ include.tag }}
+    </a>
+</div>

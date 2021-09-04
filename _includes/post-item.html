@@ -8,15 +8,17 @@
         <div class="post-item--description">{{ post.description | markdownify }}</div>
         {% endif %}
 
-        <div class="post-item--metadata">
+        <div class="post-item--bottom a-flex-center">
 
-            <time class="post-item--time txt_secondary" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include days-ago.html %}</time>
+            <div class="post-item--metadata a-flex-center">
+                <time class="post-item--time txt_secondary" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include days-ago.html %}</time>
 
-            <i class="circle-separator"></i>
+                <i class="circle-separator"></i>
 
-            {% include read-time.html %}
+                {% include read-time.html %}
+            </div>
 
-            <div class="post-item--tags">
+            <div class="post-item--tags tags-list--small a-flex-center">
                 {% for tag in post.tags %}
                 {% include tag-item.html tag=tag %}
                 {% endfor %}

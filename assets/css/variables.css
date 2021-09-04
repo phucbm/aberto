@@ -1,8 +1,50 @@
 :root {
-    --space:40px;
-    --space-small:20px;
+    /* Spacing */
+    --a-space:40px;
+    --a-space-small:20px;
 
-    --primary:#3181ce;
-    --secondary:#718096;
-    --dark:#2d3748;
+    /* Color */
+    --a-primary:#3181ce;
+    --a-secondary:#718096;
+    --a-border:#edf2f7;
+    --a-dark:#2d3748;
+
+    /* Font size */
+    --a-h1:32px;
+    --a-h2:25px;
+    --a-h3:22px;
+    --a-h4:20px;
+    --a-h5:18px;
+    --a-h6:16px;
+    --a-font-body:18px;
+    --a-font-small:14px;
+
+    /* UI */
+    --a-body-background:#fcfdfb;
+    --a-text-color:#254440;
+    --a-logo-width:100px;
+    --a-post-logo-width:60px;
+    --a-padding:20px;
+}
+
+@media only screen and (max-width:768px) {
+    :root {
+        /* Spacing */
+        --a-space:35px;
+        --a-space-small:16px;
+
+        /* Font size */
+        --a-h1:26px;
+        --a-h2:25px;
+        --a-h3:24px;
+        --a-h4:18px;
+        --a-h5:16px;
+        --a-h6:15px;
+        --a-font-body:15px;
+
+        /* UI */
+        --a-logo-width:60px;
+        --a-post-logo-width:40px;
+        --a-padding:15px;
+    }
 }

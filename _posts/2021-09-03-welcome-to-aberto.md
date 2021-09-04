@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-description: "**Hello world**, this is my Jekyll blog post."
+title: "Welcome to Aberto!"
+description: "🪄🚪👐 Static blog engine powered by Jekyll"
 tags: 
     - lorem-ipsum 
     - random
