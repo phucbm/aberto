@@ -5,7 +5,7 @@
 
     /* Color */
     --a-body-background:#fcfdfb;
-    --a-text-color:#254440;
+    --a-body-color:#254440;
     --a-post-item-background:#fff;
 
     --a-primary:#007bfe;
@@ -34,7 +34,7 @@
     :root {
         /* Color */
         --a-body-background:#171c28;
-        --a-text-color:#fff;
+        --a-body-color:#fff;
         --a-post-item-background:#1b262c;
 
         --a-primary:#007bfe;
