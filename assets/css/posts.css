@@ -12,7 +12,7 @@ li.post-item:not(:last-child) {margin-bottom:var(--a-space-small);}
 .post-item--title {margin-bottom:10px; font-size:var(--a-font-body);}
 
 /* description */
-.post-item--description {color:var(--a-text-color); margin-bottom:5px;}
+.post-item--description {color:var(--a-body-color); margin-bottom:5px;}
 
 /* metadata */
 .post-item--bottom {font-size:var(--a-font-small); padding-top:5px;}
