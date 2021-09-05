@@ -90,13 +90,13 @@ footer nav ul li:not(:last-child) {margin-right:20px;}
 .tag-item {padding:5px;}
 .tag-item a {
     display:inline-block;
-    background-color:#fff;
+    background-color:var(--a-post-item-background); color:var(--a-text-color);
     border:1px solid var(--a-border);
     font-size:var(--a-h4);
     padding:.2em .5em; border-radius:.3em;
 }
 .tag-item a:hover, .tag-item a:focus {
-    background-color:var(--a-primary); color:#fff; text-decoration:none;
+    background-color:var(--a-primary); color:var(--a-on-primary); text-decoration:none;
 }
 
 /* tags (small) */

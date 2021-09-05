@@ -4,10 +4,14 @@
     --a-space-small:20px;
 
     /* Color */
-    --a-primary:#3181ce;
+    --a-body-background:#fcfdfb;
+    --a-text-color:#254440;
+    --a-post-item-background:#fff;
+
+    --a-primary:#007bfe;
+    --a-on-primary:#fff;
     --a-secondary:#718096;
-    --a-border:#edf2f7;
-    --a-dark:#2d3748;
+    --a-border:#e5e5e5;
 
     /* Font size */
     --a-h1:32px;
@@ -20,11 +24,25 @@
     --a-font-small:14px;
 
     /* UI */
-    --a-body-background:#fcfdfb;
-    --a-text-color:#254440;
     --a-logo-width:100px;
     --a-post-logo-width:60px;
     --a-padding:20px;
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme:dark) {
+    :root {
+        /* Color */
+        --a-body-background:#171c28;
+        --a-text-color:#fff;
+        --a-post-item-background:#1b262c;
+
+        --a-primary:#007bfe;
+        --a-on-primary:#fff;
+        --a-secondary:#afafbf;
+        --a-border:#404040;
+        --a-dark:#2d3748;
+    }
 }
 
 @media only screen and (max-width:768px) {
