@@ -1,5 +1,5 @@
 <div align="center">
- <img width="100px" src="https://raw.githubusercontent.com/phucbm/aberto/master/assets/images/logo.svg" align="center" alt="GitHub Readme Stats" />
+ <img width="100px" src="https://raw.githubusercontent.com/phucbm/aberto/master/assets/images/logo.svg" align="center" alt="Aberto Logo" />
  <h1 align="center">Aberto</h1>
  <p align="center">Static blog engine powered by Jekyll and GitHub Pages</p>
 </div>
@@ -7,6 +7,9 @@
 <div align="center">
    <a href="https://jekyllrb.com/">
    <img src="https://img.shields.io/badge/-Jekyll-0273A9">
+   </a>
+<a href="https://github.com/phucbm/aberto/wiki">
+   <img src="https://img.shields.io/badge/-Wiki-0088ff">
    </a>
     <a href="https://github.com/phucbm/aberto/wiki/Folder-Structure">
    <img src="https://img.shields.io/badge/-Folder Structure-7EBB2E">
@@ -18,7 +21,8 @@
 If you only want to run this on GitHub Pages and updating content directly on GitHub.
 
 1. Fork this repo
-2. Go to [Update Content](#update-content)
+2. Turn on GitHub Pages
+3. You're on set.
 
 Deploy on your local machine:
 
