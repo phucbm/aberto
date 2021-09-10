@@ -33,11 +33,11 @@
 @media (prefers-color-scheme:dark) {
     :root {
         /* Color */
-        --a-body-background:#171c28;
-        --a-body-color:#fff;
+        --a-body-background:#22272e;
+        --a-body-color:#adbac7;
         --a-post-item-background:#1b262c;
 
-        --a-primary:#007bfe;
+        --a-primary:#549af5;
         --a-on-primary:#fff;
         --a-secondary:#afafbf;
         --a-border:#404040;
