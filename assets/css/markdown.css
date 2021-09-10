@@ -1,6 +1,7 @@
 /* Light mode */
 .markdown-body {
-    --md-body-color:var(--a-body-color);
+    --md-body-background:#fcfdfb;
+    --md-body-color:#254440;
     --md-color-dark:#1b1f23;
     --md-block-bg:#f6f8fa;
     --md-block-color:#24292f;
@@ -12,7 +13,8 @@
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
     .markdown-body {
-        --md-body-color:var(--a-body-color);
+        --md-body-background:#22272e;
+        --md-body-color:#adbac7;
         --md-color-dark:#1b1f23;
         --md-block-bg:#2d333b;
         --md-block-color:#adbac7;
@@ -769,7 +771,7 @@
 }
 
 .markdown-body table tr {
-    background-color:var(--a-body-background); color:var(--md-block-color);
+    background-color:var(--md-body-background); color:var(--md-block-color);
     border-top:1px solid var(--md-border-color);
 }
 

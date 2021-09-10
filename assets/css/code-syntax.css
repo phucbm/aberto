@@ -203,7 +203,7 @@
 .highlight .il {color:#099;}
 
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-.highlight .lineno {-webkit-user-select:none;-moz-user-select:none; -o-user-select:none;}
+.highlight .lineno {-webkit-user-select:none;-moz-user-select:none;}
 
 /* Mozilla specific */
 .lineno::-moz-selection {background-color:transparent;}
